@@ -13,4 +13,4 @@ define('PATH', 'http://www.yoursite.com');
 define('WEBSITE_TITLE', 'youresite.com');
 
 // make default controller to load
-define('WEBSITE_TITLE', 'youresite.com');
+define('DEFAULT_CONTROLLER', 'home');
