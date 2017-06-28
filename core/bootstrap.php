@@ -15,3 +15,6 @@ function __autoload($className) {
     }
     
 }
+
+// Route all request
+Router::route($url);
