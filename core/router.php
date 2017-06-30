@@ -6,11 +6,11 @@ class Router{
         $url_array = explode('/', $url);
 
         // Controller name
-        $controller = isset($url_array[0]) ? $url_array : '';
+        $controller = isset($url_array[0]) ? $url_array[0] : '';
         array_shift($url_array);
 
         // Method name
-        $action = isset($url_array[0]) ? $url_array : '';
+        $action = isset($url_array[0]) ? $url_array[0] : '';
         array_shift($url_array);
 
         // Parameters
