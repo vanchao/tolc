@@ -8,7 +8,7 @@ class Application {
     }
 
     private function set_reporting() {
-        if(DEVELOPMENT_ENVIROMENT == true) {
+        if(DEBUG == true) {
             error_reporting(E_ALL);
             ini_set('display_errors', 'On');
         } else {

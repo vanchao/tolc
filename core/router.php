@@ -27,9 +27,10 @@ class Router{
 
         $dispatch = new $controller($controller_name, $controller);
         if((int)method_exists($controller, $action))
-            call_user_method_array(array($dispatchm, $action), $query_string);
+            call_user_func_array(array($dispatch, $action), $query_string);
         else {
             /* Error Generation Code Here */
+            die('Error found');
         }
     }
 }
