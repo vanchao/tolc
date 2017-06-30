@@ -1,13 +1,17 @@
 <?php
 
 class Home extends Controller {
-    public function __construct($controller, $action) {
-        parent::__construct($controller, $action);
 
-    }
-
-    public function index()
+    /**
+     * index 
+     * 
+     * @param mixed $id 
+     * @access public
+     * @return void
+     */
+    public function index($id)
     {
-        echo 'index';
+        $this->get_view()->set('id', $id);
+        $this->get_view()->render('home_index_view');
     }
 }
