@@ -12,9 +12,10 @@ Structure Menu:
 >>    -- views   
 >>>        ---- home_index_view.php # Response Home Controller index Action   
 >-- config   
->>    ---- config.php #Your main config set   
->>    ---- config_example.php #This is a config set sample      
->-- core   
+>>    ---- config.php #Your main config set     
+>>    ---- config_example.php #This is a config set sample     
+>-- core    
+  
 >>   ---- application.php     
 >>   ---- bootstrap.php    
 >>   ---- controller.php     
